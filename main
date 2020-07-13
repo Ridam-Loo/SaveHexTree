@@ -1,0 +1,24 @@
+from os import path
+import os
+import sys
+
+def hexTree (line,n)
+'''
+line is the name of the file wothout its extension
+n is the number of characters you wish to seperate by 
+
+note: this code if incompltete and only returns the name of the path, 
+stay tuned for the complete code soon. 
+
+input : python main.py <FILE_PATH>
+'''
+  foo=[line[i:i+n] for i in range(0, len(line), n)]
+
+  foo.reverse()
+  newfoo = [item + '/' for item in foo]
+  listToStr = ''.join(map(str, newfoo)) 
+  final = listToStr + line 
+
+  folderName =  sys.argv[1]
+
+  var = os.makedirs(folderName+'/'+ final,0o755)
