@@ -1,2 +1,2 @@
 # SaveHexTree
-Saves image files in a hex tree format 
+Saves image items in a hex tree format 
